@@ -25,7 +25,6 @@ class Layerless(Account):
                                                             max_percent
                                                             )
 
-        print(amount_wei, amount, balance)
         logger.info(f"[{self.account_id}][{self.address}] Start stake stETH")
 
         await self.approve(amount_wei, STETH_CONTRACT, LAYERLESS_STETH_CONTRACT)
